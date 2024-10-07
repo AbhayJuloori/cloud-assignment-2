@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Column Form</title>
+	<style>
+		.form-container {
+			display: flex;
+			flex-wrap: wrap;
+            justify-content:center;
+        
+		}
+
+		.form-group {
+			flex-basis: calc(50% - 10px);
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"], select {
+			width: 50%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;	
+		}
+
+		button {
+			background-color: #45a049;
+            color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+            position: relative;
+            left:5px;
+            
+		}
+        button a{
+            color: white;
+            text-decoration: none;
+           
+        }
+       h1{
+        position: relative;
+        left:210px;
+      }
+        .form-container{
+            position: relative;
+            left:400px;
+        }
+        #rig{
+            position: relative;
+            right:140px;
+        }
+        body{
+            width:1000px;
+            background: linear-gradient(to right, #9999ff 50%, #66ffcc 100%);
+            background-size: cover;
+            
+        }
+	</style>
+</head>
+<body >
+	<h1 style=text-align:center;> Prepayment Risk Analysis Informations</h1>
+	<form class="form-container" action="#" method="post">
+		<div class="form-group">
+			<label for="Credit Score">Credit Score</label>
+			<input type="text" id="first-name" name="first-name" required placeholder="credit score">
+		</div>
+		<div class="form-group" id="rig">
+			<label for="OCLTV">Original loan to value</label>
+			<input type="text" id="OCLTV" name="last-name" required  placeholder="OCLTV">
+		</div>
+		<div class="form-group">
+			<label for="DTI">Dept to Income</label>
+			<input type="text" id="DTI" name="DTI" required placeholder="DTI">
+		</div>
+        <div class="form-group" id="rig">
+			<label for="OrigUPB">Original unpaid principal</label>
+			<input type="text" id="OrigUPB" name="OrigUPB" required placeholder="origUPB">
+		</div>
+        <div class="form-group">
+			<label for="PPM">PPM</label>
+			<input type="text" id="PPM" name="PPM" required placeholder="PPM">
+		</div>
+        <div class="form-group" id="rig">
+			<label for="OrigLoanTerm">Original loan term</label>
+			<input type="text" id="OrigLoanTerm" name="OrigLoanTerm" required placeholder="origloanterm">
+		</div>
+        <div class="form-group">
+			<label for="OrigInterestRate">Original Interest Rate</label>
+			<input type="text" id="OrigInterestRate" name="OrigInterestRate" required placeholder="originterestrate">
+		</div>
+        <div class="form-group" id="rig">
+			<label for="Months in Repayment">Months in Repayment</label>
+            <select id="Months in Repayment" name="Months in Repayment" required>
+                <option value="">Please select</option>
+                <option value="USA">January</option>
+                <option value="Canada">Feburary</option>
+                <option value="Mexico">March</option>
+                <option value="Mexico">April</option>
+                <option value="Mexico">May</option>
+                <option value="Mexico">June</option>
+                <option value="Mexico">July</option>
+                <option value="Mexico">August</option>
+                <option value="Mexico">September</option>
+                <option value="Mexico">October</option>
+                <option value="Mexico">November</option>
+                <option value="Mexico">December</option>
+            </select>
+		</div>
+		<div class="form-group">
+            <button class="button submit"><a href="submit.html">Submit</a>
+		</div>
+	</form>
+</body>
+</html>
